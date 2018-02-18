@@ -237,12 +237,8 @@ const byte wordOnDisplay[][8] = {
 }};
 
 void setup() {
-  
-unsigned long delaytime = 500; 
 lc.shutdown(0,false);
-/* Set the brightness to a medium values */
 lc.setIntensity(0,8);
-/* and clear the display */
 lc.clearDisplay(0);
 }
 
@@ -250,6 +246,7 @@ void wordOnMatrix() {
 /*
  * Her presenterer vi ordet på LED Matrisen.
  */
+ unsigned long delaytime = 500; 
 for(int i = 0; i < 25; i++){
  
  for(int j = 0; j < 25; j++){
